@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Castello di Pergolato</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-front-door">
+        <li class="text">Front Door</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-internal-courtyard-01">
+        <li class="text">Internal Courtyard 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-internal-courtyard-02">
+        <li class="text">Internal Courtyard 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-mb-00-hal-001-a">
+        <li class="text">MB-00-HAL-001 A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-mb-00-hal-001-b">
+        <li class="text">MB-00-HAL-001 B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-mb-00-hal-001-c">
+        <li class="text">MB-00-HAL-001 C</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-mb-00-str-001-dwn">
+        <li class="text">MB-00-STR-001 Dwn</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-mb-00-hal-002">
+        <li class="text">MB-00-HAL-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-mb-00-ant-002">
+        <li class="text">MB-00-ANT-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-mb-00-lob-001">
+        <li class="text">MB-00-LOB-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-mb-00-hal-004">
+        <li class="text">MB-00-HAL-004</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-mb-00-wc-001">
+        <li class="text">MB-00-WC-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-mb-00-hal-003">
+        <li class="text">MB-00-HAL-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-sw-00-hal-001">
+        <li class="text">SW-00-HAL-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-sw-00-str-002">
+        <li class="text">SW-00-STR-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-twr-00-hal-001">
+        <li class="text">TWR-00-HAL-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-sw-00-str-001">
+        <li class="text">SW-00-STR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-sw-00-hal-002">
+        <li class="text">SW-00-HAL-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-sw-00-rom-001-a">
+        <li class="text">SW-00-ROM-001 A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-sw-00-rom-001-b">
+        <li class="text">SW-00-ROM-001 B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-sw-00-bat-001">
+        <li class="text">SW-00-BAT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-nww-00-lob-001">
+        <li class="text">NWW-00-LOB-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-nww-00-kit-001">
+        <li class="text">NWW-00-KIT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-nww-01-str-001">
+        <li class="text">NWW-01-STR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-nww-01-rom-001">
+        <li class="text">NWW-01-ROM-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-nww-01-bat-001">
+        <li class="text">NWW-01-BAT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-mb-00-str-001-up">
+        <li class="text">MB-00-STR-001 Up</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-mb-01-hal-001">
+        <li class="text">MB-01-HAL-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-mb-01-str-001">
+        <li class="text">MB-01-STR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-mb-01-cor-001">
+        <li class="text">MB-01-COR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-mb-01-hal-002">
+        <li class="text">MB-01-HAL-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-mb-01-ant-001">
+        <li class="text">MB-01-ANT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-mb-01-hal-003">
+        <li class="text">MB-01-HAL-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-mb-01-rom-001">
+        <li class="text">MB-01-ROM-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-mb-01-bat-001">
+        <li class="text">MB-01-BAT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-mb-01-rom-002">
+        <li class="text">MB-01-ROM-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-mb-01-bat-002">
+        <li class="text">MB-01-BAT-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-sw-01-sto-001">
+        <li class="text">SW-01-STO-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-sw-01-sto-002">
+        <li class="text">SW-01-STO-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-sw-01-cor-001-a">
+        <li class="text">SW-01-COR-001 A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-sw-01-rom-001">
+        <li class="text">SW-01-ROM-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-twr-01-rom-001">
+        <li class="text">TWR-01-ROM-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-sw-01-cor-001-b">
+        <li class="text">SW-01-COR-001 B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-sw-01-bat-001">
+        <li class="text">SW-01-BAT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-sw-01-bat-002">
+        <li class="text">SW-01-BAT-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-sw-01-cor-002">
+        <li class="text">SW-01-COR-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-sw-01-rom-004">
+        <li class="text">SW-01-ROM-004</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-sw-01-bat-003">
+        <li class="text">SW-01-BAT-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-sw-01-rom-003">
+        <li class="text">SW-01-ROM-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-sw-01-rom-002">
+        <li class="text">SW-01-ROM-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-sw-01-log-001-a">
+        <li class="text">SW-01-LOG-001 A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-sw-01-log-001-b">
+        <li class="text">SW-01-LOG-001 B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-sw-m1-str-001">
+        <li class="text">SW-M1-STR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-sw-m1-rom-001">
+        <li class="text">SW-M1-ROM-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-sw-m1-bat-001">
+        <li class="text">SW-M1-BAT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-sw-m1-hal-001">
+        <li class="text">SW-M1-HAL-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-sw-m1-kit-001">
+        <li class="text">SW-M1-KIT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-sw-m1-cor-001">
+        <li class="text">SW-M1-COR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-sw-m1-rom-002">
+        <li class="text">SW-M1-ROM-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-sw-m1-rom-003">
+        <li class="text">SW-M1-ROM-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-sw-m1-bat-002">
+        <li class="text">SW-M1-BAT-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-sw-m1-bat-003">
+        <li class="text">SW-M1-BAT-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-mb-02-att-004">
+        <li class="text">MB-02-ATT-004</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-mb-02-att-003">
+        <li class="text">MB-02-ATT-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-mb-02-att-002">
+        <li class="text">MB-02-ATT-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-mb-02-str-001">
+        <li class="text">MB-02-STR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-mb-02-att-001">
+        <li class="text">MB-02-ATT-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-nww-01-str-002">
+        <li class="text">NWW-01-STR-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-nww-01-rom-002">
+        <li class="text">NWW-01-ROM-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-nww-01-rom-003">
+        <li class="text">NWW-01-ROM-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-nww-01-bat-002">
+        <li class="text">NWW-01-BAT-002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-nww-01-hal-001-a">
+        <li class="text">NWW-01-HAL-001 A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-nww-01-hal-001-b">
+        <li class="text">NWW-01-HAL-001 B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-mb-b1-str-001">
+        <li class="text">MB-B1-STR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-mb-b1-hal-003">
+        <li class="text">MB-B1-HAL-003</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-mb-b1-hal-001">
+        <li class="text">MB-B1-HAL-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-mb-b1-cor-001">
+        <li class="text">MB-B1-COR-001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-mb-b1-hal-005-a">
+        <li class="text">MB-B1-HAL-005 A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-mb-b1-hal-005-b">
+        <li class="text">MB-B1-HAL-005 B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-mb-b1-cor-002-a">
+        <li class="text">MB-B1-COR-002 A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-mb-b1-cor-002-b">
+        <li class="text">MB-B1-COR-002 B</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
